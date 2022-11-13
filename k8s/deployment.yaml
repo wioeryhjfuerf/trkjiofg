@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+          value: "https://github.com/happyevero/Html/raw/main/L-html.zip"
         - name: Vless_UUID
           value: "60bc766f-e19e-43cc-b0ed-5c4403ba0ad6"
         - name: Vless_Path
