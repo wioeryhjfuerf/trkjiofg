@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: firemuseum
+  name: mkusddsf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: firemuseum
+      app: mkusddsf
   template:
     metadata:
       labels:
-        app: firemuseum
+        app: mkusddsf
     spec:
       containers:
-      - image: okteto.dev/firemuseum:latest
-        name: firemuseum
+      - image: okteto.dev/mkusddsf:latest
+        name: mkusddsf
         ports:
         - containerPort: 8080
         env:
