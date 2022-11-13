@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: firemuseum
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firemuseum
+  template:
+    metadata:
+      labels:
+        app: firemuseum
+    spec:
+      containers:
+      - image: okteto.dev/firemuseum:latest
+        name: firemuseum
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "36eb4e08-552f-4b77-a1fa-dc43c15fd748"
+        - name: Vless_Path
+          value: "/swaGu23we"
+        - name: Vmess_UUID
+          value: "67b800dd-43db-419d-8fad-9b5244d791d9"
+        - name: Vmess_Path
+          value: "/sjifoeo3aw"
+        - name: Share_Path
+          value: "/v2link"
